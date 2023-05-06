@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test2.css" >
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <img src="output-onlinepngtools (1).png" class="logo" >
+    <button id="nav-menu-btn" class="menubtn">=</button>
+    <nav >
+        <ul class="menu" id="menu">
+            <li class="menuoption"><a href="">direction</a></li>
+            <li class="menuoption"><a href="">testimonial</a></li>
+            <li class="menuoption"><a href="">services</a></li>
+            <li class="menuoption"><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+<header>
+    <div class="meno">
+        <div class="navbar active nav-first">
+            <div class="navbar active nav-second">
+                <div class="navbar active navbar-list">
+                    <i class="fa-solid fa-square-xmark"></i> 
+
+                    <ul>
+                        <li><a href="#direction" class="side-menu">direction</a></li>
+                        <li><a href="#testimonial" class="side-menu">review</a></li>
+                        <li><a href="#locations" class="side-menu">services</a></li>
+                        <li><a href="#contact" class="side-menu">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+const open_menu = document.querySelector('.menubtn')
+const close_menu = document.querySelector('.fa-square-xmark');
+const nav_active = document.querySelectorAll('.navbar');
+
+open_menu.addEventListener('click', () => {
+    nav_active.forEach((elem) => elem.classList.add('active') )
+})
+
+close_menu.addEventListener('click', () => {
+    nav_active.forEach(elem => elem.classList.remove('active'))
+})
+</script>
+    <H1 class="company-name">S.S.Tranpsort co.</H1>
+    <div class="img-1"> <div class="move"><img src="—Pngtree—cartoon blue truck delivery service_5553221.png" class="move-pic"></div>
+    <p class="p1">
+        <q> founded in 1984, s.s. provides safe and secure transportation in the field of hardware goods and household ,vehicles , government constructions material , etc..under the mission of providing highest quality services to each and every customer.</q><br>
+         in 20 years we loaded these many of trucks :<span class="number" data-val="9000"> 0000+ </span>  and these many tons of goods:<span class="number" data-val="350000"> 000000 </span> 
+    </p>
+    <script>
+        let valueDisplay = document.querySelectorAll(".number");
+let interval = 5000;
+valueDisplay.forEach(valueDisplay => {
+	let startvalue = 0;
+	let endvalue = parseInt(valueDisplay.getAttribute("data-val"));
+	let duration = Math.floor(interval/endvalue);
+	let counter = setInterval(function () {
+		startvalue += 5;
+		valueDisplay.textContent = startvalue;
+		if(startvalue == endvalue){
+			clearInterval(counter);
+		}
+	})
+})
+    </script>
+    <div class="space1"></div>
+    <div>
+        <h1 class="about">Our Vision </h1>
+            <p class="points"> 
+                &#10153;  to be top in market. <br>
+                &#10153;  introducing new innovative services.<br>
+                &#10153;  fully equipped to handle your bulk from anywhere.<br></p>
+            <div class="space2" id="locations"></div>
+    </div>
+    <script>
+    const search = () =>{
+        const searchbox = document.getElementById("search-item").value.toUpperCase();
+        const storeitem = document.getElementById("product-list")
+        const product = document.querySelectorAll(".product")
+        const pname = storeitem.getElementsByTagName("h2")
+    
+        for(var i=0;1 <pname.length; i++){
+            let match = product[i].getElementsByTagName('h2')[0];
+            if (match) {
+                let textvalue = match.textContent || match.innerHTML
+            if
+                (textvalue.toUpperCase().indexOf(searchbox) > -1 ){
+                    product[i].style.display = "";
+                }else{
+                    product[i].style.display = "none";
+                }
+            }
+        };
+    }
+</script>
+    
+        <div class="search">
+            <h1 class="feature" >Our Locations</h1>
+            <section class="container">
+                <form>
+                    &#128269;<input type="search" name= "" id= "search-item" placeholder="Search Destination" onkeyup="search()">
+                </form>
+                <div class="city-list" id="product-list">
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ALIGARH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ALLAHBAD</h2>
+                        </div>
+                    </div><div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>AYABAZAR</h2>
+                        </div>
+                    </div><div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>AYODHYA</h2>
+                        </div>
+                    </div><div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>AKBARPUR</h2>
+                        </div>
+                    </div><div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>AZAMGARH</h2>
+                        </div>
+                    </div><div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ANANDNAGAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ATROLIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>AHROLABAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ATTARA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ARYANAGAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>AVADH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>AURAIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>AJITMAL</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BASTI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BANSI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BALARAMPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BALLIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BETHRAROAD</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BEHRAICH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BARABANKI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BELATAL</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BADHOI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BABNAN</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BRAJMANGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BADNI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BELARIYAGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BUDHANPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BASKHARI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BANARAS</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BISKOHAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BATALPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BHARAHIBAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BHATPARANI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BISWA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BANDA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BALPUR BAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BHINGA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BALDIRAI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BHRWARI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BELA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>BABERU</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>CHORICHORA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>CHAURI BAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>CHANNI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>CHIRAIYAKOOT</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>CHITRAKOOT</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>CHAIL</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>DEORIA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>DUMARIYAGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>DHORIGHAT</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ETWA BAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>EKONA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ETAHWA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>FAIZABAD</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>FATEHPUR[BNK]</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>FATEHPUR[AID]</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PHOOLPUR[AZM]</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PHOOLPUR[ALD]</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>FAZILNAGAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>FARUKHABAD</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GORAKHPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GONDA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GOSHI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GHAZIPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GOSAIGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GOPIGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GOLA[GKP]</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GOLA[LKM]</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GUGLY</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>GIYANPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>HATA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>HARGAUN</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>HAMEERPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>HARRIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>HARDOI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>JAUNPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>JANGIPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>JALALPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>JEETPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>JALAUN</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>JASVANTNAGAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>JGDISHPUR</h2>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>JHANSI</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KASIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KAPTANGANJ[MJ]</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KAPTANGANJ[KSN]</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KOYALASABAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KARNALGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KHALILABAD</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KOPAGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KESARGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KHARGUPAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KOCH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KARHAL</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KARVI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KANRAJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KULPHAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KALPI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KAJURY ROAD</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KADIPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KURARA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KODIBAD</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>KHAKURATH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>LUCKNOW</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>LAKHIMPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>LALGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>LALITPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>LALGOPALGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>LEHRPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>M.BADSHAHPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MDBGHONA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MAU</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MUBARAKPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MUGALSARAI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MIRZAPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MURANIPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MASKANWA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MADHAVAL</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MANIPURWA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MANKAPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MAHARAJGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MAHNAGAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MUNDARWA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MAHOBA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MAUDAHA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MAHMUDABAD</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MADHABAN</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MIHINPUWA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MACHLI SHAHR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>MISHEKH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>NAUTANAWA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>NABABGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>NANPARA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>NICHNOOL</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>NAINI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>NEURIBAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>NARAINI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ORAI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ORAIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PARASPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PADRIBAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PIPRAICH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PRATAPGARH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PADROUNA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PRAYAGPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PATTI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PANWARI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PALIYANKALA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PURANPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PATNAGAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PATNA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>P.P.GANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>PHULPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RAIBARELY</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RENUKOOT</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>ROBERTGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RUPAIDIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RASRA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RANI KI SARAI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RISIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RAMKOLA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RUDHOLIBAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RONAPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RAJESULTANPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RATH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RAMKOTA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>RUNDHOLI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SITAPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SULTANPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SHAHJANGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SHAHJADPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SAIDPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SARIMEER</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SHAHGANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SHAJANWA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SHOHRATGARH</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SISWABAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SALEMPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SANOLI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>SHIRATHU</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>TAMKUIROAD</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>TANDA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>TULSIPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>THUTIBARI</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>TARABHANJ</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>TIKNOIYA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>UATROLA</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>USKABAZAR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>WALDPUR</h2>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="truckgetty.jpg" alt="city-pic">
+                        <div class="p-detail">
+                            <h2>YOUSAFPUR</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="space3" id="testimonial"></div>
+        </div>
+        <h1 class="price" >" TESTIMONIALS "</h1>
+        <div class="review" >
+            <div class="card">
+                <div class="box">
+                    <h3>'HARRISON LOCK'</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nam distinctio repudiandae, ea saepe id ducimus nihil, temporibus, porro ad commodi totam neque repellat ut ipsa alias accusantium impedit nisi.</p>
+                    <a href="#"><button class="btn">For Bookings</button></a>
+                    <span class="count">1</span>
+                </div>
+                <div class="box">
+                    <h3>'LINK LOCKS'</h3>
+                    <p>A World Renounced Company From Aligarh By Mr.Zafar Alam , The Company Is Connected To Us For Moving There Valuable Product , They Are Regular With Us Since Many Years.</p>
+                    <a href="#"><button class="btn">For Bookings</button></a>
+                    <span class="count">2</span>
+                </div>
+                <div class="box">
+                    <h3>'TIBBIYA COLLEGE'</h3>
+                    <p>  The Premier University Dawa Khana Tibbiya College - ALIGARH MUSLIM UNIVERSITY Is Our Customer Since Many Years Working with Us Regularly , Having A trust On S.S In Every Aspect.</p>
+                    <a href="#contanctus"><button class="btn">For Bookings</button></a>
+                    <span class="count">3</span>
+                </div>
+            </div>
+        </div>
+        <div class="space4" ></div>
+        <DIV>
+            <h1 class="contact" >CONTACT US</h1>
+            <ul class="contact-detail">
+                <li>Number &#9742;: <a>9870996135</a></li>
+                <li>E.mial &#9993;: <a>eklavyasingh@gmail.com</a></li>
+            </ul>
+            <div class="space5" id="direction"></div>
+        </DIV>
+        <div>
+            <h1 class="direction">DIRECTION</h1>
+            <h3 class="branch"> ALIGARH MAIN BRANCH </h3>
+            <div class="iframe"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.6199077723863!2d78.0730350751634!3d27.882943976082338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a5e175efbaa3%3A0x3e664d8612ec2b18!2sS.S%20TRANSPORT%20CORPORATION!5e0!3m2!1sen!2sin!4v1682443623385!5m2!1sen!2sin"  style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="space5" id="contact"></div>
+        </div>
+        <div class="inputdiv">
+            <h1 class="enquiry"> Send Inquiry</h1>
+            <form >
+                <label for="customer_name">Name:</label><br>
+                <input type="text" placeholder="Name"><br>
+                <label for="customer_adress">Company:</label><br>
+                <input type="text" placeholder="Company Name" ><br>                                             
+                <label for="customer_adress">Adress:</label><br>
+                <input type="text" placeholder="Adress" ><br>
+                <button class="enter"> Submit</button>
+            </form>
+        </div>
+        <div class="gif"><iframe src="https://giphy.com/embed/l4Ho7AfNzHCtwGR0s" frameBorder="0" class="giphy-embed" ></iframe></div><p><a href="https://giphy.com/gifs/truck-l4Ho7AfNzHCtwGR0s"></a></p></div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+        <div class="adv">Proudly Made By <a >TheCraftii</a> </div>
+    </div>
+</body>
+</html>
