@@ -13,6 +13,9 @@ body{
 html , body{
     overflow-x: hidden;
 }
+button{
+    cursor: pointer;
+}
 .logo{
     margin-bottom: -15vh;
     height: 20vh;
@@ -55,8 +58,10 @@ html , body{
     color:#e7d1b1;
     font-family: 'Space Mono', monospace;
     text-align: center;
-    margin: 125px 10vw;
-    font-size: 5rem;
+    margin: 0 10vw;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    font-size: 4rem;
     text-transform: uppercase;
     white-space: nowrap;
     background-color: #18375c;
@@ -223,9 +228,9 @@ header{
     margin-top: 50px;
 }
 .feature:hover{
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-decoration: underline 1rem #112A46;
-    transition: 0.75s;
+    transition: 1s;
 }
 .price{
     color: #112A46;
@@ -236,9 +241,9 @@ header{
     margin-bottom: -1rem;
 }
 .price:hover{
-    font-size: 2.5rem;
-    text-decoration: underline 1rem #112A46;
-    transition: 0.75s;
+    font-size: 2.2rem;
+    text-decoration: underline 0.5rem #112A46;
+    transition: 1s;
 }
 .review{
     min-height: 50vh;
@@ -268,7 +273,7 @@ header{
 }
 .box{
     width: 300px;
-    height: 50vh;
+    height: 65vh;
     background-color: #e7d1b1;
     border-radius: 2rem;
     text-align: center;
@@ -283,7 +288,7 @@ header{
 }
 .box::after{
     width: 300px;
-    height: 50vh;
+    height: 65vh;
     background-color: #e7d1b1;
     background-image: linear-gradient(45deg,#ACC8E5  0% , #ACC8E5 100% );
     content: '';
@@ -314,6 +319,9 @@ header{
 .box:hover .count{
     color: #e7d1b1;
 }
+.p-box{
+    line-height: 1.5rem;
+}
 .logo-2{
     z-index: 1000;
 }
@@ -322,7 +330,7 @@ header{
     font-size: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    min-height: 50vh;
+    min-height: 10vh;
     margin-top: 50px;
 }
 .contact:hover{
@@ -350,6 +358,7 @@ header{
     background-color: #112A46;
     margin:20px auto;
     border-radius: 25px;
+    margin-bottom: 100px;
 }
 .contact-detail,.branch,.direction,.enquiry{
     text-align: center;
@@ -359,6 +368,33 @@ header{
 }
 .contact-detail li a{
     cursor: pointer;
+}
+.se-in{
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.num-location{
+    margin-left: 1rem;
+    font-size: 1rem;
+    margin:"none";
+    background-color: transparent;
+}
+#copy{
+    text-decoration: solid;
+    font-weight: 800;
+}
+.num-copy{
+    margin-left: 1rem;
+    background-color: #e7d1b1;
+    padding: 2px;
+    margin-bottom: -0.5rem;
+    color: #112A46;
+    text-decoration: solid;
+}
+.num-copy:active ,.num-copy:hover{
+    padding: 2.2px;
+    font-size: 1em;
 }
 .contact-detail li a:hover{
     background-color: #ACC8E5;
@@ -373,11 +409,27 @@ header{
     background-color: #112A46;
     margin:20px auto;
     border-radius: 25px;
+    margin-top: 100px;
 }
-.direction,.branch{
+.branch{
     font-size:2.5rem;
     padding:1.5rem;
-    margin-top:50px;
+    margin-top:25px;
+}
+#hand{
+    text-align: center;
+    margin-left: 49vw;
+    margin-bottom: -3rem;
+    font-size: 2rem;
+    color: #18375c;
+    transform: translateY(2rem);
+    transition: all 1s linear ease-in-out ;
+    transition-duration: 5s;
+}
+.direction{
+    font-size:2.5rem;
+    padding:1.5rem;
+    margin-top:25px;
 }
 .btn{
     margin-top: 3rem ;
@@ -425,12 +477,12 @@ header{
     margin-bottom: 1.5rem;
     text-align: center;
 }
-input{
-    font-size: 1.5rem;
+.in-form{
+    font-size: 1.2rem;
     color: #112A46;
     text-align: center;
     margin:1rem auto;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     
 }
 label{
@@ -537,7 +589,7 @@ form{
     opacity: 1;
   }
   .company-name{
-    font-size: 2rem;
+    font-size: 1.5rem;
     box-shadow: 5px 2px 1.5px black;
   }
   .move{
@@ -604,13 +656,15 @@ form{
 .search{
     display: flex;
     flex-direction: column;
-    margin: auto;
     align-items: center;
     justify-content: center;
 }
+#search-item{
+    font-size: 1.1rem;
+}
 .container{
-    width:75vw;
-    height: 60vh;
+    width:80vw;
+    height: 70vh;
     background-color: #ACC8E5;
     border-radius: 2rem;
     box-shadow: 1rem 1rem 3rem rgb(0, 0, 0);
@@ -624,10 +678,6 @@ form{
 }
 .container::-webkit-scrollbar{
     display: none;
-}
-input{
-    font-size: 1.4rem;
-    text-align: left;
 }
 .product{
     display: flex;
@@ -644,4 +694,5 @@ input{
     color:#18375c;
     font-size: 1.5rem;
     padding-left: 1rem;
+    margin-top: -1rem;
 }
