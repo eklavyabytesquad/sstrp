@@ -93,14 +93,18 @@ header{
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(100%);
+    transform: translateY(100%);
     transition: all 0.4s linear;
+    overflow: hidden;
 }
 .nav-first{
     width: 50%;
     max-width: 50vw;
     min-width: 10vw;
-    background:linear-gradient(135deg,#ACC8E5,rgba(255,255,255,0.1) );
+    transform: translateY(82%);
+    transition: all 0.4s linear;
+    background:linear-gradient(135deg,#e7d1b1,rgba(255,255,255,0.1) );
+
 }
 .nav-second{
     width: 95%;
@@ -422,9 +426,16 @@ header{
     margin-bottom: -3rem;
     font-size: 2rem;
     color: #18375c;
-    transform: translateY(2rem);
-    transition: all 1s linear ease-in-out ;
-    transition-duration: 5s;
+    animation: hand 2s infinite ;
+    animation-timing-function: ease-in-out;
+}
+@keyframes hand{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(3rem);
+    }
 }
 .direction{
     font-size:2.5rem;
