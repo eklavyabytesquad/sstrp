@@ -28,7 +28,7 @@ navMenuBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
 
   const liElements = menu.querySelectorAll('li');
-  liElements.forEach(li => {
+  liElements.forEach(li) => {
     li.classList.toggle('active');
   });
 });
